@@ -14,48 +14,95 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BetRaise" type="MarginContainer" parent="ActionBox"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ActionBox"]
 margin_right = 450.0
-margin_bottom = 50.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="ActionBox/HBoxContainer"]
+margin_right = 450.0
+margin_bottom = 37.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ActionBox/HBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 443.0
+margin_bottom = 30.0
+
+[node name="Label" type="Label" parent="ActionBox/HBoxContainer/PanelContainer/HBoxContainer"]
+margin_top = 4.0
+margin_right = 210.0
+margin_bottom = 18.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Your Chips:"
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="ActionBox/HBoxContainer/PanelContainer/HBoxContainer"]
+margin_left = 214.0
+margin_top = 4.0
+margin_right = 222.0
+margin_bottom = 18.0
+text = "$"
+
+[node name="Label2" type="Label" parent="ActionBox/HBoxContainer/PanelContainer/HBoxContainer"]
+margin_left = 226.0
+margin_top = 4.0
+margin_right = 436.0
+margin_bottom = 18.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "0"
+align = 2
+valign = 1
+
+[node name="BetRaise" type="MarginContainer" parent="ActionBox"]
+margin_top = 41.0
+margin_right = 450.0
+margin_bottom = 78.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="BetRaisePanel" type="PanelContainer" parent="ActionBox/BetRaise"]
 margin_right = 450.0
-margin_bottom = 50.0
+margin_bottom = 37.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="BetRaiseLabel" type="Label" parent="ActionBox/BetRaise/BetRaisePanel"]
 margin_left = 7.0
-margin_top = 18.0
+margin_top = 11.0
 margin_right = 443.0
-margin_bottom = 32.0
+margin_bottom = 25.0
 text = "Bet/Raise"
 align = 1
 
 [node name="Hold" type="MarginContainer" parent="ActionBox"]
-margin_top = 54.0
+margin_top = 82.0
 margin_right = 450.0
-margin_bottom = 105.0
+margin_bottom = 119.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="HoldPanel" type="PanelContainer" parent="ActionBox/Hold"]
 margin_right = 450.0
-margin_bottom = 51.0
+margin_bottom = 37.0
 
 [node name="HoldLabel" type="Label" parent="ActionBox/Hold/HoldPanel"]
 margin_left = 7.0
-margin_top = 18.0
+margin_top = 11.0
 margin_right = 443.0
-margin_bottom = 32.0
+margin_bottom = 25.0
 text = "Hold"
 align = 1
 valign = 1
 
 [node name="CallCheck" type="MarginContainer" parent="ActionBox"]
-margin_top = 109.0
+margin_top = 123.0
 margin_right = 450.0
 margin_bottom = 160.0
 size_flags_horizontal = 3
@@ -63,13 +110,13 @@ size_flags_vertical = 3
 
 [node name="CallCheckPanel" type="PanelContainer" parent="ActionBox/CallCheck"]
 margin_right = 450.0
-margin_bottom = 51.0
+margin_bottom = 37.0
 
 [node name="CallCheckLabel" type="Label" parent="ActionBox/CallCheck/CallCheckPanel"]
 margin_left = 7.0
-margin_top = 18.0
+margin_top = 11.0
 margin_right = 443.0
-margin_bottom = 32.0
+margin_bottom = 25.0
 text = "Call/Check"
 align = 1
 valign = 1

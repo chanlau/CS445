@@ -1,0 +1,75 @@
+[gd_scene format=2]
+
+[node name="NonUserPlayer" type="MarginContainer"]
+margin_right = 150.0
+margin_bottom = 80.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 150.0
+margin_bottom = 80.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelVerticalContainer" type="VBoxContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 143.0
+margin_bottom = 73.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NameContainer" type="CenterContainer" parent="PanelContainer/PanelVerticalContainer"]
+margin_right = 136.0
+margin_bottom = 15.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PlayerTag" type="Label" parent="PanelContainer/PanelVerticalContainer/NameContainer"]
+margin_left = 60.0
+margin_right = 76.0
+margin_bottom = 14.0
+text = "P1"
+
+[node name="PlayerCardContainer" type="HBoxContainer" parent="PanelContainer/PanelVerticalContainer"]
+margin_top = 19.0
+margin_right = 136.0
+margin_bottom = 34.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MoneyCenterContainer" type="CenterContainer" parent="PanelContainer/PanelVerticalContainer"]
+margin_top = 38.0
+margin_right = 136.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MoneyContainer" type="HBoxContainer" parent="PanelContainer/PanelVerticalContainer/MoneyCenterContainer"]
+margin_left = 35.0
+margin_right = 101.0
+margin_bottom = 28.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DollarSign" type="Label" parent="PanelContainer/PanelVerticalContainer/MoneyCenterContainer/MoneyContainer"]
+margin_top = 7.0
+margin_right = 8.0
+margin_bottom = 21.0
+text = "$"
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/PanelVerticalContainer/MoneyCenterContainer/MoneyContainer"]
+margin_left = 12.0
+margin_right = 66.0
+margin_bottom = 28.0
+
+[node name="PlayerMoney" type="Label" parent="PanelContainer/PanelVerticalContainer/MoneyCenterContainer/MoneyContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 47.0
+margin_bottom = 21.0
+text = "10000"

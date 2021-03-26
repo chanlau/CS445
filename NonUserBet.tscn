@@ -1,0 +1,51 @@
+[gd_scene format=2]
+
+[node name="NonUserBet" type="MarginContainer"]
+margin_right = 310.0
+margin_bottom = 82.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BetPanel" type="PanelContainer" parent="."]
+margin_right = 310.0
+margin_bottom = 82.0
+
+[node name="SplitLabels" type="HBoxContainer" parent="BetPanel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 303.0
+margin_bottom = 75.0
+
+[node name="PlayersBet" type="Label" parent="BetPanel/SplitLabels"]
+margin_right = 134.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "Players Bet:"
+align = 1
+valign = 1
+
+[node name="$" type="Label" parent="BetPanel/SplitLabels"]
+margin_left = 138.0
+margin_right = 157.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.14
+text = "$"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BetAmount" type="Label" parent="BetPanel/SplitLabels"]
+margin_left = 161.0
+margin_right = 296.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "0"
+align = 1
+valign = 1
