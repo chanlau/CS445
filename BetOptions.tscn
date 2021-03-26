@@ -1,0 +1,353 @@
+[gd_scene format=2]
+
+[node name="BetOptionsMargin" type="MarginContainer"]
+margin_right = 450.0
+margin_bottom = 160.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BetOptions" type="VBoxContainer" parent="."]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 440.0
+margin_bottom = 150.0
+
+[node name="AmountToBetMargin" type="MarginContainer" parent="BetOptions"]
+margin_right = 430.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 100
+custom_constants/margin_left = 100
+
+[node name="AmountToBetPanel" type="PanelContainer" parent="BetOptions/AmountToBetMargin"]
+margin_left = 100.0
+margin_right = 330.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="AmountToBet" type="Label" parent="BetOptions/AmountToBetMargin/AmountToBetPanel"]
+margin_left = 7.0
+margin_top = 9.0
+margin_right = 223.0
+margin_bottom = 23.0
+text = "Amount to Bet"
+align = 1
+
+[node name="BetAmountRow" type="HBoxContainer" parent="BetOptions"]
+margin_top = 36.0
+margin_right = 430.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+
+[node name="BetAmountMargin" type="MarginContainer" parent="BetOptions/BetAmountRow"]
+margin_right = 266.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BetAmountText" type="PanelContainer" parent="BetOptions/BetAmountRow/BetAmountMargin"]
+margin_right = 266.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BetBox" type="HBoxContainer" parent="BetOptions/BetAmountRow/BetAmountMargin/BetAmountText"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 259.0
+margin_bottom = 25.0
+
+[node name="DollarLabel" type="Label" parent="BetOptions/BetAmountRow/BetAmountMargin/BetAmountText/BetBox"]
+margin_top = 2.0
+margin_right = 30.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "$"
+align = 1
+valign = 1
+
+[node name="BetLabel" type="Label" parent="BetOptions/BetAmountRow/BetAmountMargin/BetAmountText/BetBox"]
+margin_left = 34.0
+margin_top = 2.0
+margin_right = 252.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+size_flags_stretch_ratio = 7.24
+text = "0"
+align = 1
+valign = 1
+
+[node name="ClearMargin" type="MarginContainer" parent="BetOptions/BetAmountRow"]
+margin_left = 270.0
+margin_right = 430.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.6
+
+[node name="ClearPanel" type="PanelContainer" parent="BetOptions/BetAmountRow/ClearMargin"]
+margin_right = 160.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ClearLabel" type="Label" parent="BetOptions/BetAmountRow/ClearMargin/ClearPanel"]
+margin_left = 7.0
+margin_top = 9.0
+margin_right = 153.0
+margin_bottom = 23.0
+text = "Clear"
+align = 1
+valign = 1
+
+[node name="ClearButton" type="TextureButton" parent="BetOptions/BetAmountRow/ClearMargin"]
+margin_right = 160.0
+margin_bottom = 32.0
+
+[node name="IncrementRow1" type="HBoxContainer" parent="BetOptions"]
+margin_top = 72.0
+margin_right = 430.0
+margin_bottom = 104.0
+size_flags_vertical = 3
+
+[node name="+1Margin" type="MarginContainer" parent="BetOptions/IncrementRow1"]
+margin_right = 104.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="+1Button" type="TextureButton" parent="BetOptions/IncrementRow1/+1Margin"]
+margin_right = 104.0
+margin_bottom = 32.0
+
+[node name="+1Panel" type="PanelContainer" parent="BetOptions/IncrementRow1/+1Margin"]
+margin_right = 104.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+1Label" type="Label" parent="BetOptions/IncrementRow1/+1Margin/+1Panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 97.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "+1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+5Margin" type="MarginContainer" parent="BetOptions/IncrementRow1"]
+margin_left = 108.0
+margin_right = 213.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="+5Button" type="TextureButton" parent="BetOptions/IncrementRow1/+5Margin"]
+margin_right = 105.0
+margin_bottom = 32.0
+
+[node name="+5Panel" type="PanelContainer" parent="BetOptions/IncrementRow1/+5Margin"]
+margin_right = 105.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+5Label" type="Label" parent="BetOptions/IncrementRow1/+5Margin/+5Panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 98.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "+5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+10Margin" type="MarginContainer" parent="BetOptions/IncrementRow1"]
+margin_left = 217.0
+margin_right = 321.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="+10Button" type="TextureButton" parent="BetOptions/IncrementRow1/+10Margin"]
+margin_right = 104.0
+margin_bottom = 32.0
+
+[node name="+10Panel" type="PanelContainer" parent="BetOptions/IncrementRow1/+10Margin"]
+margin_right = 104.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+10Label" type="Label" parent="BetOptions/IncrementRow1/+10Margin/+10Panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 97.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "+10"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+25Margin" type="MarginContainer" parent="BetOptions/IncrementRow1"]
+margin_left = 325.0
+margin_right = 430.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="+25Button" type="TextureButton" parent="BetOptions/IncrementRow1/+25Margin"]
+margin_right = 105.0
+margin_bottom = 32.0
+
+[node name="+25Panel" type="PanelContainer" parent="BetOptions/IncrementRow1/+25Margin"]
+margin_right = 105.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+25Label" type="Label" parent="BetOptions/IncrementRow1/+25Margin/+25Panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 98.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "+25"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IncrementRow2" type="HBoxContainer" parent="BetOptions"]
+margin_top = 108.0
+margin_right = 430.0
+margin_bottom = 140.0
+size_flags_vertical = 3
+
+[node name="+50Margin" type="MarginContainer" parent="BetOptions/IncrementRow2"]
+margin_right = 140.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 20
+custom_constants/margin_left = 20
+
+[node name="+50Button" type="TextureButton" parent="BetOptions/IncrementRow2/+50Margin"]
+margin_left = 20.0
+margin_right = 120.0
+margin_bottom = 32.0
+
+[node name="+50Panel" type="PanelContainer" parent="BetOptions/IncrementRow2/+50Margin"]
+margin_left = 20.0
+margin_right = 120.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+50Label" type="Label" parent="BetOptions/IncrementRow2/+50Margin/+50Panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 93.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "+50"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="+100Margin" type="MarginContainer" parent="BetOptions/IncrementRow2"]
+margin_left = 144.0
+margin_right = 285.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 20
+custom_constants/margin_left = 20
+
+[node name="+100Button" type="TextureButton" parent="BetOptions/IncrementRow2/+100Margin"]
+margin_left = 20.0
+margin_right = 121.0
+margin_bottom = 32.0
+
+[node name="+100Panel" type="PanelContainer" parent="BetOptions/IncrementRow2/+100Margin"]
+margin_left = 20.0
+margin_right = 121.0
+margin_bottom = 32.0
+
+[node name="+100Label" type="Label" parent="BetOptions/IncrementRow2/+100Margin/+100Panel"]
+margin_left = 7.0
+margin_top = 9.0
+margin_right = 94.0
+margin_bottom = 23.0
+text = "+100"
+align = 1
+valign = 1
+
+[node name="+500Margin" type="MarginContainer" parent="BetOptions/IncrementRow2"]
+margin_left = 289.0
+margin_right = 430.0
+margin_bottom = 32.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 20
+custom_constants/margin_left = 20
+
+[node name="+500Button" type="TextureButton" parent="BetOptions/IncrementRow2/+500Margin"]
+margin_left = 20.0
+margin_right = 121.0
+margin_bottom = 32.0
+
+[node name="+500Panel" type="PanelContainer" parent="BetOptions/IncrementRow2/+500Margin"]
+margin_left = 20.0
+margin_right = 121.0
+margin_bottom = 32.0
+
+[node name="+500Label" type="Label" parent="BetOptions/IncrementRow2/+500Margin/+500Panel"]
+margin_left = 7.0
+margin_top = 9.0
+margin_right = 94.0
+margin_bottom = 23.0
+text = "+500"
+align = 1
+valign = 1

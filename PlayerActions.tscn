@@ -1,0 +1,78 @@
+[gd_scene format=2]
+
+[node name="PlayersActions" type="MarginContainer"]
+margin_right = 450.0
+margin_bottom = 160.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionBox" type="VBoxContainer" parent="."]
+margin_right = 450.0
+margin_bottom = 160.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BetRaise" type="MarginContainer" parent="ActionBox"]
+margin_right = 450.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BetRaisePanel" type="PanelContainer" parent="ActionBox/BetRaise"]
+margin_right = 450.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BetRaiseLabel" type="Label" parent="ActionBox/BetRaise/BetRaisePanel"]
+margin_left = 7.0
+margin_top = 18.0
+margin_right = 443.0
+margin_bottom = 32.0
+text = "Bet/Raise"
+align = 1
+
+[node name="Hold" type="MarginContainer" parent="ActionBox"]
+margin_top = 54.0
+margin_right = 450.0
+margin_bottom = 105.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HoldPanel" type="PanelContainer" parent="ActionBox/Hold"]
+margin_right = 450.0
+margin_bottom = 51.0
+
+[node name="HoldLabel" type="Label" parent="ActionBox/Hold/HoldPanel"]
+margin_left = 7.0
+margin_top = 18.0
+margin_right = 443.0
+margin_bottom = 32.0
+text = "Hold"
+align = 1
+valign = 1
+
+[node name="CallCheck" type="MarginContainer" parent="ActionBox"]
+margin_top = 109.0
+margin_right = 450.0
+margin_bottom = 160.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CallCheckPanel" type="PanelContainer" parent="ActionBox/CallCheck"]
+margin_right = 450.0
+margin_bottom = 51.0
+
+[node name="CallCheckLabel" type="Label" parent="ActionBox/CallCheck/CallCheckPanel"]
+margin_left = 7.0
+margin_top = 18.0
+margin_right = 443.0
+margin_bottom = 32.0
+text = "Call/Check"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
